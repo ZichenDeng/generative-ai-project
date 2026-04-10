@@ -10,6 +10,7 @@ This repository contains the minimum set of materials for sharing the current pr
 - `docs/proposal/data-execution-plan-2026-04-09.md`: current benchmark and experiment plan
 - `docs/planning/team-roles-and-milestones.md`: team work-package split and milestone plan
 - `docs/planning/next-steps.md`: immediate action items for the team
+- `data/`: dataset manifests, fold files, and dataset comparison notes for the team
 
 ## Current Project Direction
 

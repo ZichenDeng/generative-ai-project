@@ -1,0 +1,5 @@
+task_id,priority,category,filename,label_column,task_type,size,notes
+koenig_binding_g6,primary,binding,koenig2017mutational_kd_g6.csv,fitness,regression,4276,"Best first binding task; same antibody family as koenig expression task; paired story for binding vs expression."
+koenig_expression_g6,primary,expression,koenig2017mutational_er_g6.csv,fitness,regression,4276,"Best first developability-like task; directly paired with koenig binding task."
+warszawski_binding_d44,secondary,binding,warszawski2019_d44_Kd.csv,fitness,regression,2049,"Good secondary binding benchmark; moderate size and clean schema."
+jain_expression_hek,secondary,expression,jain2017biophysical_HEK.csv,fitness,regression,137,"Small therapeutic-expression dataset; useful only as a qualitative or low-data sanity check."
