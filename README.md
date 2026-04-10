@@ -6,6 +6,8 @@ This repository contains the minimum set of materials for sharing the current pr
 
 - `docs/proposal/project-proposal.pdf`: submitted or presentation-ready proposal copy
 - `docs/proposal/proposal-summary-latest.md`: latest concise summary of the revised project direction
+- `docs/proposal/proposal-draft-v2-2026-04-09.md`: latest fuller proposal draft
+- `docs/proposal/data-execution-plan-2026-04-09.md`: current benchmark and experiment plan
 - `docs/planning/team-roles-and-milestones.md`: team work-package split and milestone plan
 - `docs/planning/next-steps.md`: immediate action items for the team
 
