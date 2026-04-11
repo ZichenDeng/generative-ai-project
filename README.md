@@ -9,8 +9,11 @@ This repository contains the minimum set of materials for sharing the current pr
 - `docs/proposal/proposal-draft-v2-2026-04-09.md`: latest fuller proposal draft
 - `docs/proposal/data-execution-plan-2026-04-09.md`: current benchmark and experiment plan
 - `docs/planning/team-roles-and-milestones.md`: team work-package split and milestone plan
+- `docs/planning/milestone-execution-plan-2026-04-11.md`: concrete parallel milestone plan
 - `docs/planning/next-steps.md`: immediate action items for the team
 - `data/`: dataset manifests, fold files, and dataset comparison notes for the team
+- `scripts/`: reproducible scripts for the first benchmark baselines
+- `results/`: current baseline and ESM-2 benchmark outputs
 
 ## Current Project Direction
 
@@ -18,4 +21,4 @@ The project is now framed as a focused benchmark study rather than a full end-to
 
 ## Scope
 
-This share repo intentionally excludes raw data, processed data, code, and internal draft history. It is meant for quick team alignment on proposal direction, division of work, and near-term execution.
+This share repo intentionally excludes large raw data and internal draft history. It includes small processed fold files, benchmark manifests, and lightweight scripts needed for quick team alignment and milestone execution.

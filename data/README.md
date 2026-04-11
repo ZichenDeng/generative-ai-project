@@ -18,3 +18,9 @@ This directory collects the data-facing materials that are safe and useful to sh
 - ad hoc local copies of external datasets
 
 The intent is to keep this share repo lightweight and reproducible. Teammates can use the manifests and notes here to retrieve permitted source data separately.
+
+## Current Processed Fold Files
+
+- `processed/koenig2017mutational_kd_g6_folds.csv`
+- `processed/koenig2017mutational_er_g6_folds.csv`
+- `processed/warszawski2019_d44_Kd_folds.csv`
