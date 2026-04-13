@@ -15,6 +15,8 @@ This table combines the completed milestone benchmark rows.
 
 ## Current Results
 
+### Koenig Binding (g6)
+
 | Task              | Model                   |   RMSE |    MAE |      R2 | Pearson | Spearman |
 | ----------------- | ----------------------- | -----: | -----: | ------: | ------: | -------: |
 | koenig_binding_g6 | train_mean              | 0.5550 | 0.3906 | -0.0012 |  0.0000 |      nan |
@@ -25,6 +27,10 @@ This table combines the completed milestone benchmark rows.
 | koenig_binding_g6 | esm2_mlp                | 0.7293 | 0.5588 | -0.7229 |  0.3313 |   0.3181 |
 | koenig_binding_g6 | esm2_shared_mlp         | 0.5342 | 0.3879 |  0.0756 |  0.4098 |   0.3886 |
 
+### Koenig Expression (g6)
+
+| Task              | Model                   |   RMSE |    MAE |      R2 | Pearson | Spearman |
+| ----------------- | ----------------------- | -----: | -----: | ------: | ------: | -------: |
 | koenig_expression_g6 | train_mean | 0.5708 | 0.4699 | -0.0010 | 0.0000 | nan |
 | koenig_expression_g6 | sequence_features_ridge | 0.5500 | 0.4426 | 0.0700 | 0.2690 | 0.2466 |
 | koenig_expression_g6 | esm2_ridge | 0.3851 | 0.2973 | 0.5440 | 0.7463 | 0.7294 |
@@ -33,6 +39,10 @@ This table combines the completed milestone benchmark rows.
 | koenig_expression_g6 | esm2_mlp | 0.3019 | 0.2244 | 0.7205 | 0.8493 | 0.8233 |
 | koenig_expression_g6 | esm2_shared_mlp | 0.3681 | 0.2815 | 0.5845 | 0.7663 | 0.7270 |
 
+### Warszawski Binding (d44)
+
+| Task              | Model                   |   RMSE |    MAE |      R2 | Pearson | Spearman |
+| ----------------- | ----------------------- | -----: | -----: | ------: | ------: | -------: |
 | warszawski_binding_d44 | train_mean | 1.2928 | 1.0669 | -0.0056 | 0.0000 | nan |
 | warszawski_binding_d44 | sequence_features_ridge | 1.2564 | 1.0307 | 0.0491 | 0.2458 | 0.2600 |
 | warszawski_binding_d44 | esm2_ridge | 1.2412 | 0.9825 | 0.0691 | 0.4806 | 0.4794 |
