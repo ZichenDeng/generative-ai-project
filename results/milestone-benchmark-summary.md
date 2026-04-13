@@ -17,39 +17,46 @@ This table combines the completed milestone benchmark rows.
 
 ### Koenig Binding (g6)
 
-| Task              | Model                   |   RMSE |    MAE |      R2 | Pearson | Spearman |
-| ----------------- | ----------------------- | -----: | -----: | ------: | ------: | -------: |
-| koenig_binding_g6 | train_mean              | 0.5550 | 0.3906 | -0.0012 |  0.0000 |      nan |
-| koenig_binding_g6 | sequence_features_ridge | 0.5464 | 0.3854 |  0.0293 |  0.1811 |   0.1735 |
-| koenig_binding_g6 | esm2_ridge              | 0.5006 | 0.3591 |  0.1817 |  0.4862 |   0.4663 |
-| koenig_binding_g6 | abmap_esm2_ridge        | 0.5617 | 0.4119 | -0.0304 |  0.3606 |   0.3337 |
-| koenig_binding_g6 | abmap_mlp               | 0.5882 | 0.4391 | -0.1207 |  0.3403 |   0.2980 |
-| koenig_binding_g6 | esm2_mlp                | 0.7293 | 0.5588 | -0.7229 |  0.3313 |   0.3181 |
-| koenig_binding_g6 | esm2_shared_mlp         | 0.5342 | 0.3879 |  0.0756 |  0.4098 |   0.3886 |
+| Model                   |   Spearman |   RMSE |    MAE |      R2 | Pearson |
+| ----------------------- | ---------: | -----: | -----: | ------: | ------: |
+| train_mean              |        nan | 0.5550 | 0.3906 | -0.0012 |  0.0000 |
+| sequence_features_ridge |     0.1735 | 0.5464 | 0.3854 |  0.0293 |  0.1811 |
+| **esm2_ridge**          | **0.4663** | 0.5006 | 0.3591 |  0.1817 |  0.4862 |
+| esm2_mlp                |     0.3181 | 0.7293 | 0.5588 | -0.7229 |  0.3313 |
+| esm2_shared_mlp         |     0.3886 | 0.5342 | 0.3879 |  0.0756 |  0.4098 |
+| abmap_esm2_ridge        |     0.3337 | 0.5617 | 0.4119 | -0.0304 |  0.3606 |
+| abmap_mlp               |     0.2980 | 0.5882 | 0.4391 | -0.1207 |  0.3403 |
+| abmap_shared_mlp        |     0.2621 | 0.5820 | 0.4358 | -0.0973 |  0.3177 |
+
 
 ### Koenig Expression (g6)
 
-| Task              | Model                   |   RMSE |    MAE |      R2 | Pearson | Spearman |
-| ----------------- | ----------------------- | -----: | -----: | ------: | ------: | -------: |
-| koenig_expression_g6 | train_mean | 0.5708 | 0.4699 | -0.0010 | 0.0000 | nan |
-| koenig_expression_g6 | sequence_features_ridge | 0.5500 | 0.4426 | 0.0700 | 0.2690 | 0.2466 |
-| koenig_expression_g6 | esm2_ridge | 0.3851 | 0.2973 | 0.5440 | 0.7463 | 0.7294 |
-| koenig_expression_g6 | abmap_esm2_ridge | 0.4976 | 0.3899 | 0.2368 | 0.5566 | 0.5444 |
-| koenig_expression_g6 | abmap_mlp | 0.4388 | 0.3414 | 0.4097 | 0.6481 | 0.6276 |
-| koenig_expression_g6 | esm2_mlp | 0.3019 | 0.2244 | 0.7205 | 0.8493 | 0.8233 |
-| koenig_expression_g6 | esm2_shared_mlp | 0.3681 | 0.2815 | 0.5845 | 0.7663 | 0.7270 |
+| Model                   |   Spearman |   RMSE |    MAE |      R2 | Pearson |
+| ----------------------- | ---------: | -----: | -----: | ------: | ------: |
+| train_mean              |        nan | 0.5708 | 0.4699 | -0.0010 |  0.0000 |
+| sequence_features_ridge |     0.2466 | 0.5500 | 0.4426 |  0.0700 |  0.2690 |
+| esm2_ridge              |     0.7294 | 0.3851 | 0.2973 |  0.5440 |  0.7463 |
+| **esm2_mlp**            | **0.8233** | 0.3019 | 0.2244 |  0.7205 |  0.8493 |
+| esm2_shared_mlp         |     0.7270 | 0.3681 | 0.2815 |  0.5845 |  0.7663 |
+| abmap_esm2_ridge        |     0.5444 | 0.4976 | 0.3899 |  0.2368 |  0.5566 |
+| abmap_mlp               |     0.6276 | 0.4388 | 0.3414 |  0.4097 |  0.6481 |
+| abmap_shared_mlp        |     0.5147 | 0.4819 | 0.3812 |  0.2879 |  0.5398 |
+
+
 
 ### Warszawski Binding (d44)
 
-| Task              | Model                   |   RMSE |    MAE |      R2 | Pearson | Spearman |
-| ----------------- | ----------------------- | -----: | -----: | ------: | ------: | -------: |
-| warszawski_binding_d44 | train_mean | 1.2928 | 1.0669 | -0.0056 | 0.0000 | nan |
-| warszawski_binding_d44 | sequence_features_ridge | 1.2564 | 1.0307 | 0.0491 | 0.2458 | 0.2600 |
-| warszawski_binding_d44 | esm2_ridge | 1.2412 | 0.9825 | 0.0691 | 0.4806 | 0.4794 |
-| warszawski_binding_d44 | abmap_esm2_ridge | 1.4774 | 1.1787 | -0.3163 | 0.3488 | 0.3455 |
-| warszawski_binding_d44 | abmap_mlp | 1.2519 | 0.9999 | 0.0624 | 0.3895 | 0.3871 |
-| warszawski_binding_d44 | esm2_mlp | 1.2954 | 1.0238 | -0.0039 | 0.5368 | 0.5500 |
-| warszawski_binding_d44 | esm2_shared_mlp | 1.1873 | 0.9748 | 0.1567 | 0.3976 | 0.3897 |
+| Model                   |   Spearman |   RMSE |    MAE |      R2 | Pearson |
+| ----------------------- | ---------: | -----: | -----: | ------: | ------: |
+| train_mean              |        nan | 1.2928 | 1.0669 | -0.0056 |  0.0000 |
+| sequence_features_ridge |     0.2600 | 1.2564 | 1.0307 |  0.0491 |  0.2458 |
+| esm2_ridge              |     0.4794 | 1.2412 | 0.9825 |  0.0691 |  0.4806 |
+| **esm2_mlp**            | **0.5500** | 1.2954 | 1.0238 | -0.0039 |  0.5368 |
+| esm2_shared_mlp         |     0.3897 | 1.1873 | 0.9748 |  0.1567 |  0.3976 |
+| abmap_esm2_ridge        |     0.3455 | 1.4774 | 1.1787 | -0.3163 |  0.3488 |
+| abmap_mlp               |     0.3871 | 1.2519 | 0.9999 |  0.0624 |  0.3895 |
+| abmap_shared_mlp        |     0.3678 | 1.2052 | 0.9842 |  0.1311 |  0.3840 |
+
 
 ---
 
