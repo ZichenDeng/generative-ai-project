@@ -1,0 +1,9 @@
+No accepted Germinal designs were produced for this run.
+
+accepted=0
+redesign_candidate=8
+trajectory=0
+
+Raw failure_counts.csv:
+
+

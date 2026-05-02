@@ -1,0 +1,5 @@
+Finished all designs after 1 attempted trajectories.
+1 designs failed initial Germinal design.
+1 designs failed filters and were rejected.
+0 designs passed all filters and were accepted.
+Elapsed: 0h 22m 56s.

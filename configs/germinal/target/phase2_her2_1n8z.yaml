@@ -1,0 +1,9 @@
+# @package target
+# HER2 domain IV target derived from the trastuzumab-bound 1N8Z structure.
+
+target_name: "her2_1n8z_trastuzumab"
+target_pdb_path: "pdbs/1n8z_her2_chainA.pdb"
+target_chain: "A"
+binder_chain: "B"
+target_hotspots: "A557,A558,A560,A561,A569,A570,A571,A572,A573"
+hotspot_residue: "F573"

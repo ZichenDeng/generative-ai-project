@@ -1,0 +1,10 @@
+No accepted Germinal designs were produced for this run.
+
+accepted=0
+redesign_candidate=0
+trajectory=0
+
+Raw failure_counts.csv:
+
+Trajectory_logits_pLDDT
+1
