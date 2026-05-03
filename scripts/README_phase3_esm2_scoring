@@ -1,0 +1,65 @@
+# Phase 3 ESM2 Reranking Pipeline
+
+## Overview
+
+This script performs **Phase 3 of the antibody design pipeline**, where candidate sequences generated from Germinal (Phase 2) are reranked using **fine-tuned ESM2 models** hosted on Hugging Face.
+
+The goal is to rapidly prioritize high-quality antibody candidates based on predicted:
+- binding affinity
+- expression
+- (optionally) additional developability metrics
+
+---
+
+## What This Script Does
+
+Given a Germinal output CSV, the pipeline:
+
+1. Loads candidate sequences
+2. Cleans and filters sequences (QC)
+3. Downloads fine-tuned ESM2 models from Hugging Face
+4. Scores each sequence using multiple predictive models
+5. Normalizes scores (z-score)
+6. Computes a composite score
+7. Outputs a ranked list of candidates
+
+---
+
+## Input
+
+Germinal Phase 2 output:
+
+results/germinal_phase2/handoffs/pdl1_smoke_all_candidates.csv
+
+The file must contain at least one of the following columns:
+
+- `sequence`
+- `trajectory_sequence`
+- `binder_sequence`
+
+---
+
+## Output
+
+Reranked candidates:
+
+
+### Added Columns
+
+- `esm2_*` → raw model predictions
+- `*_z` → normalized scores
+- `phase3_composite_score` → final ranking score
+- `phase3_rank` → sorted rank
+
+---
+
+## Usage
+
+Run the pipeline:
+
+```bash
+python phase3_esm2_pipeline.py \
+  --input results/germinal_phase2/handoffs/pdl1_smoke_all_candidates.csv \
+  --output results/germinal_phase3/pdl1_phase3_esm2_reranked.csv \
+  --hf_repo zhangtin/antibody-esm2-finetuned \
+  --drop_duplicates
